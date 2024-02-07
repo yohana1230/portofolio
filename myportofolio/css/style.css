@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bg-loading{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-loading.loading{
+    width: 150px;
+    height: 150px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    border-top-color: white;
+    border-right-color: black;
+    border-bottom-color: black;
+    animation: puterin .88888s linear infinite;
+}
+
+@keyframes puterin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*Header*/
+.menu{
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.menu a img{
+    width: 250px;
+    padding: 10px 20px;
+}
+
+.menu ul{
+    float:  right;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a{
+    display: inline-block;
+    padding: 30px 20px;
+    font-family: 'Kanit';
+    font-weight: bold;
+}
+
+.menu ul li a:hover{
+    background-color: #be80f1;
+    color: white;
+}
+
+ul li.active{
+    background-color: white;
+    color: #000000;
+}
+
+/*Banner*/
+.banner{
+    height: auto;
+    width: auto;
+    background-image: url('../gambar/background.jpg');
+    background-size: cover;
+    text-align: left;
+    color: white;
+    padding-top: 240px;
+    padding-bottom: 230px; 
+}
+
+.banner .isi{
+    margin-left: 100px;
+}
+
+.banner h4{
+    font-family: 'Calibri';
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.banner h1{
+    font-size: 85px;
+    font-family: 'Bungee';
+    line-height: 110px;
+}
+
+.banner button{
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 24px;
+    width: 200px;
+    height: auto;
+    font-family: 'Kanit';
+    background-color:  #000000;;
+    color: #fff;
+    border-radius:90px;
+    box-shadow: 0 0 0 3px white;
+    border: none;
+    cursor: pointer;
+}
+
+.banner button:hover{
+    background-color:#ffffff;
+    color:#6c1c9c;
+    box-shadow: 0 0 0 3px #6c1c9c;
+}
+
+
+/*About*/
+.about{
+    background-color: #fbe3ff;
+    padding: 70px;
+    padding-top: 110px;
+    display: inline-block;
+
+}
+.about .colom{
+    float: left;
+    width: 45%;
+    height: auto;
+    padding: 90px 50px;
+    text-align: center;
+}
+
+.about .colom img{
+    width: 50%;
+    margin-left: 50%;
+}
+
+.about .colom h5{
+    color: black;
+    background-color: rgb(251, 251, 251);
+    box-shadow: 40px 40px 50px rgba(0, 0, 0, 0.3);
+    word-spacing: 3px;
+    font-family: 'Calibri';
+    font-weight: 100px;
+    padding: 50px 50px;
+    border-radius:50px;
+    font-size: 28px;
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+/*Project*/
+.project img{
+    width: 30%;
+    padding-top: 50px;
+}
+
+.project{
+    text-align: center;
+    background-color: #d2a9f4;
+    padding: 60px;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.row .column{
+    float: left;
+    width: 33%;
+    height: auto;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.row .column .card{
+    display: inline-block;
+    list-style: none;
+}
+
+.card {
+    box-shadow: 0 0 20px rgba(255, 73, 170, 0.384);
+    padding: 45px 3px;
+    border-radius:30px;
+    width: 100%;
+    height: 100%;
+    
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-family: 'Kanit';
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card img{
+    width: 60%;
+    height: 50%;
+    border-radius: 10%;
+}
+.card h3{
+    padding: 5px 0;
+    font-weight: 1000;
+    font-size: 30px;
+}
+.card h5{
+    font-weight: 400; 
+    font-size: 18px;  
+    padding: 6px;
+}
+.card:hover{
+    color: #d363f2;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*Contact*/
+.contact{
+    text-align: center;
+    background-image: url('../gambar/bg.jpeg');
+    background-size: cover;
+    padding: 60px;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.contact .gambar img{
+    width: 20%;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.baris{
+    display: inline-block;
+    width: 70%;
+    height: auto;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.kotak {
+    /*box-shadow: 0 0 20px rgba(235, 81, 252, 0.3);
+    padding: 45px 3px;
+    border-radius:30px;
+    width: 100%;
+    height: 100%;
+    
+
+    background-color: rgb(255, 255, 255);
+    */
+    color: black;
+    cursor: pointer;
+    font-family: 'Kanit';
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.kotak h3{
+    padding: 5px 0;
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+
+
+.icon{
+    margin-top: 40px;
+    display: inline-block;
+    text-align: center;
+}
+.icon ul {
+    display: inline-block;
+}
+.icon ul li {
+    list-style: none;
+    margin: 40px 40px;
+    float: left;
+}
+.icon ul li a img{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    transition: 0.7s;
+}
+.icon:hover{
+    color: #d363f2;
+}
+.icon :hover{
+    transform: scale(1.15);
+}
+
+/*FOOTER*/
+footer{
+    padding: 40px 0;
+    background-color: #c84ded79;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}

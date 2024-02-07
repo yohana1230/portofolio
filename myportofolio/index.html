@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Yohana Putri</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+        </style>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="javascript/navigasi.js"></script>
+    </head>
+
+    <body>
+        <!--Loading-->
+        <div class = "bg-loading">
+            <div class = "loading"></div>
+        </div>
+
+        <script type = "text/javascript">
+            $(document).ready(function(){
+                $(".bg-loading").hide();
+            })
+        </script>
+
+
+
+        <!--Header-->
+        <header>
+            <div class="menu">
+                <a href="index.html"><img src="gambar/logo.png"></a>
+                <ul>
+                    <li class = "active"><a href = "#index">HOME</a></li>
+                    <li><a href = "#about">ABOUT</a></li>
+                    <li><a href = "#project">PROECT</a></li>
+                    <li><a href = "#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!--Banner-->
+        <div id="index" class="banner">
+            <div class="background"></div>
+            <div class="isi">
+                <h4>Hello, my name is</h4>
+                <h1>Yohana Putri</h1>
+                <h1>Kusumastuti</h1>
+                <a href="index.html#about" class = "active"><button>About Me</button></a>
+            </div>
+        </div>
+
+        <!--About-->
+        <div id="about" class="about">
+            <div class = "colom">
+                <img src="gambar/about.png">
+            </div>
+            <div class = "colom">
+                <h5>
+                    <p>Saya seorang fresh graduate D3 Teknik Informatika Politeknik Negeri Semarang.</p><br/>
+                    <p>
+                        Saya membuat projek kuliah berupa website dengan bahasa pemrograman HTML, CSS, dan 
+                        JavaScript. Selain itu saya membuat projek Visual Basic.NET dengan menggunakan 
+                        database SSMS dan Microsoft Access.
+                    </p><br/>
+                    <p>
+                        Terampil dalam menggunakan Microsoft Office, 
+                        Desain Canva dan Figma. Memiliki keinginan dan semangat yang besar untuk 
+                        belajar hal - hal baru.
+                    </p>
+                </h5>
+            </div>
+        </div>
+
+        <!--Project-->
+        <div id="project" class="project">
+            <img src="gambar/project.png">
+            <div class="row">
+                <!--Kolom 1 Perpustakaan-->
+                <div class = "column">
+                    <div class="card">
+                        <a href="perpustakaan.html"><img src="gambar/perpustakaan/perpustakaan.png"/></a>
+                        <h3>Perpustakaan</h3>
+                        <h5>VB.NET dengan database Microsoft Access</h5>
+                    </div>
+                </div>
+                
+                 <!--Kolom 2-->
+                 <div class = "column">
+                    <div class="card">
+                        <a href="apotek.html"><img src="gambar/apotek/apotek.png"/></a>
+                        <h3>Apotek Sehat</h3>
+                        <h5>VB.NET dengan database SQL Server Manajemen Studio</h5>
+                    </div>
+                </div>
+
+                 <!--Kolom 3-->
+                 <div class = "column">
+                    <div class="card">
+                        <a href="sistem_monitoring.html"><img src="gambar/web_monitoring/web_monitoring.png"/></a>
+                        <h3>Sistem Monitoring</h3>
+                        <h5>Website dengan database Firebase</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--contact-->
+        <div id="contact" class="contact">
+            <div class="gambar">
+                <img src="gambar/my contact.png">
+            </div>
+            <div class="baris">
+                <!--Kolom 1 Perpustakaan-->
+                    <div class="kotak">
+                        <h3>You can contact my sosial media for more information</h3>
+                        <div class="icon">
+                            <ul>
+                                <li><a href="https://www.instagram.com/yohanaputrii_/"><img src="gambar/ig.png"></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCknTGiQ_PKKG6do-4BF7iXA"><img src="gambar/youtube.png"></a></li>
+                                <li><a href="https://web.telegram.org/k/#@yohana090"><img src="gambar/telegram.png"></a></li>
+                                <li><a href="mailto:email@yohanaputrii.k24@gmail.com"><img src="gambar/email.png"></a></li>
+                                <li><a href="https://www.linkedin.com/in/yohana-putri-kusumastuti-86a803299"><img src="gambar/linkedin.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="foot"></div>
+            <small>Copyright &copy; 2023 - Yohana Putri</small><br/>
+            <small> Thank you for comming my portofolio.</small>
+        </footer>
+    </body>
+
+</html>

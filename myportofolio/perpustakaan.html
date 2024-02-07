@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Yohana Putri</title>
+        <link rel="stylesheet" type="text/css" href="css/project.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+        </style>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="javascript/navigasi.js"></script>
+    </head>
+
+    <body>
+        <!--Loading-->
+        <div class = "bg-loading">
+            <div class = "loading"></div>
+        </div>
+
+        <script type = "text/javascript">
+            $(document).ready(function(){
+                $(".bg-loading").hide();
+            })
+        </script>
+
+
+
+        <!--Header-->
+        <header>
+            <div class="menu">
+                <a href="index.html"><img src="gambar/logo.png"></a>
+                <ul>
+                    <li class = "active"><a href = "perpustakaan.html">PROECT</a></li>
+                    <li><a href = "index.html#project">BACK</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!--Perpustakaan-->
+        <div id="index" class="project">   
+            <img src="gambar/perpustakaan/perpustakaan_info.png"><br/><br/>
+            <div class="isi">
+
+                <!--Kolom 1 Perpustakaan-->
+                <div class = "column">
+                    <div class="card">
+                        <img src="gambar/perpustakaan/perpustakaan.png"/></a>
+                        <h3>Perpustakaan</h3>
+                        <h5>Tampilan awal aplikasi perpustakaan</h5>
+                    </div>
+                </div>
+
+                <!--Kolom 2 Perpustakaan-->
+                <div class = "column">
+                    <div class="card">
+                        <img src="gambar/perpustakaan/perpustakaan_password.png"/></a>
+                        <h3>Username & Password</h3>
+                        <h5>Memasukkan username dan password untuk masuk kedalam aplikasi perpustakaan</h5>
+                    </div>
+                </div>
+                
+                 <!--Kolom 3 Perpustakaan-->
+                 <div class = "column">
+                    <div class="card">
+                        <img src="gambar/perpustakaan/perpustakaan_anggota.png"/></a>
+                        <h3>Anggota Perpustakaan</h3>
+                        <h5>Memasukkan data anggota perpustakaan dalam aplikasi</h5>
+                    </div>
+                </div>
+
+                 <!--Kolom 4 Perpustakaan-->
+                 <div class = "column">
+                    <div class="card">
+                        <img src="gambar/perpustakaan/perpustakaan_peminjaman.png"/></a>
+                        <h3>Peminjaman Buku</h3>
+                        <h5>Memasukkan data anggota dan buku yang dipinjam dari perpustakaan</h5>
+                    </div>
+                </div>
+            </div>    
+        </div>
